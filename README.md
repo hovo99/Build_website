@@ -117,3 +117,202 @@ Data to provide:
 - Asset list from template
 - Real paths inside theme (`css/`, `js/`, etc.)
 
+
+
+
+# =====================================
+# NEW AI AUTOMATION FEATURES
+# =====================================
+
+## Added Features
+
+This upgraded version includes:
+
+1. Auto CPT Detection
+2. Full Page Parser
+3. WooCommerce Detection
+4. Smart ACF Field Detection
+5. Auto Query Generation
+
+
+# HOW TO USE NEW FEATURES
+
+## 1) Auto CPT Detection
+
+### What It Does
+AI automatically detects when repeated content should become:
+- Custom Post Type
+- Repeater
+- Taxonomy
+- WooCommerce Products
+
+### Example Prompt
+
+Use rules from docs/ai/HTML_TO_ACF_BUILDER.md
+
+Convert this section into a dynamic WordPress component.
+Automatically detect:
+- CPTs
+- repeaters
+- taxonomies
+- WP_Query structures
+
+[paste section HTML]
+
+### Example Result
+Projects grid automatically becomes:
+- CPT: project
+- archive query
+- single template recommendation
+
+
+# =====================================
+
+## 2) Full Page Parser
+
+### What It Does
+Instead of converting sections one by one,
+AI can now parse the FULL HTML page automatically.
+
+### Detects Automatically
+- Hero
+- Services
+- FAQ
+- Testimonials
+- CTA
+- Blog
+- Products
+- Contact
+- Team
+- Pricing
+
+### Example Prompt
+
+Use rules from docs/ai/HTML_TO_ACF_BUILDER.md
+
+Parse this FULL HTML page into:
+- flexible content layouts
+- reusable components
+- ACF fields
+- queries
+- recommended theme structure
+
+[paste full HTML page]
+
+
+# =====================================
+
+## 3) WooCommerce Detection
+
+### What It Does
+AI automatically detects ecommerce/product layouts.
+
+### Detects
+- prices
+- add to cart buttons
+- sale badges
+- product cards
+- product galleries
+
+### Example Prompt
+
+Use rules from docs/ai/HTML_TO_ACF_BUILDER.md
+
+Convert this ecommerce section into WooCommerce architecture.
+
+Requirements:
+- native WooCommerce integration
+- dynamic product loop
+- preserve classes
+
+[paste ecommerce HTML]
+
+
+# =====================================
+
+## 4) Smart ACF Field Detection
+
+### What It Does
+AI automatically selects best ACF field types.
+
+### Auto Mapping
+- image -> image field
+- gallery -> gallery field
+- cards -> repeater
+- button -> link field
+- text editor -> wysiwyg
+- dropdown -> select
+- related posts -> relationship field
+
+### Example
+AI detects:
+- repeated cards
+- nested content
+- rich text
+- CTA blocks
+
+And generates optimized editable admin structure.
+
+
+# =====================================
+
+## 5) Auto Query Generation
+
+### What It Does
+AI automatically creates:
+- WP_Query
+- WooCommerce queries
+- pagination-ready loops
+
+### Example Generated Query
+
+```php
+$args = [
+  'post_type' => 'project',
+  'posts_per_page' => 6
+];
+```
+
+### Example Prompt
+
+Generate dynamic WordPress query structure for this section.
+
+[paste HTML]
+
+
+# =====================================
+
+# RECOMMENDED WORKFLOW
+
+## BEST METHOD
+
+1. Paste FULL HTML page
+2. Use Full Page Parser prompt
+3. AI splits sections automatically
+4. AI detects:
+   - CPTs
+   - WooCommerce
+   - repeaters
+   - queries
+5. AI generates:
+   - flexible content
+   - PHP components
+   - field structure
+   - WP architecture
+
+# FINAL RESULT
+
+HTML Template
+    ↓
+AI Parsing
+    ↓
+Flexible Content
+    ↓
+ACF Fields
+    ↓
+CPT Detection
+    ↓
+WooCommerce Integration
+    ↓
+Dynamic WordPress Theme
+
